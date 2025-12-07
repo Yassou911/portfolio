@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Yasser Portfolio</title>
+  <link rel="stylesheet" href="CSS/Milestone_2.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>My Projects</h1>
+    <button id="theme-toggle" aria-label="Toggle dark mode">Toggle Dark Mode</button>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="Home_page.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <h2>Project Filter</h2>
+      <p>Type below to filter projects by name, description, or status.</p>
+      <label for="project-search" class="visually-hidden">Filter projects</label>
+      <input type="text" id="project-search" placeholder="Search projects...">
+    </section>
+
+    <section>
+      <h2>Project List</h2>
+      <p>Below is a table of my projects and their current status.</p>
+      <table id="projects-table">
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Personal Portfolio</td>
+            <td>A responsive website that showcases my skills, projects, and contact information using HTML, CSS, and JavaScript.</td>
+            <td>In Progress</td>
+            <td>
+              <a href="https://github.com/Yassou911/Portfolio_Website" target="_blank" rel="noopener">View on GitHub</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Expense Tracker App</td>
+            <td>A simple app that tracks expenses and summaries, practicing arrays and objects.</td>
+            <td>Completed</td>
+            <td>
+              <a href="https://github.com/Yassou911/Expence-tracker" target="_blank" rel="noopener">View on GitHub</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Weather Dashboard (Planned)</td>
+            <td>A planned project to display basic weather information from an API and practice async JavaScript.</td>
+            <td>Coming Soon</td>
+            <td>
+              <a href="#" aria-disabled="true">Coming soon</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <p>
+        You can also visit my main
+        <a href="https://github.com/Yassou911" target="_blank" rel="noopener">GitHub profile</a>
+        (I am still setting up my repositories).
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yasser Portfolio</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

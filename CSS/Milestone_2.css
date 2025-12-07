@@ -1,0 +1,279 @@
+/* ====== Global Styles ====== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== Header ====== */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ====== Navigation ====== */
+nav ul {
+  list-style: none;
+  background-color: #0066cc;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #004080;
+  border-radius: 5px;
+}
+
+/* ====== Main Content ====== */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== Headings ====== */
+h1, h2, h3 {
+  color: #004080;
+}
+
+/* ====== Lists ====== */
+ul, ol {
+  margin: 10px 0 20px 20px;
+  line-height: 1.6;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+/* ====== Table ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #004080;
+  color: white;
+  padding: 8px;
+}
+
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* ====== Images ====== */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 15px auto;
+  border-radius: 8px;
+}
+
+/* ====== Forms and Buttons ====== */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover,
+button:focus {
+  background-color: #004080;
+}
+
+/* Project search input spacing */
+#project-search {
+  margin-top: 10px;
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  background-color: #004080;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* ====== Section Spacing ====== */
+section {
+  margin-bottom: 25px;
+}
+
+/* ====== Dark Mode ====== */
+.dark-mode {
+  background-color: #222;
+  color: #f1f1f1;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #111;
+}
+
+.dark-mode nav ul {
+  background-color: #333;
+}
+
+.dark-mode nav a {
+  color: #b3d8ff;
+}
+
+
+/* Main container & sections */
+.dark-mode main {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  box-shadow: none;
+  border: 1px solid #444;
+}
+
+.dark-mode section {
+  background-color: transparent;
+  color: #f1f1f1;
+}
+
+/* Headings */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+  color: #78b9ff;
+}
+
+/* Tables */
+.dark-mode table,
+.dark-mode th,
+.dark-mode td {
+  border: 1px solid #555;
+  color: #f1f1f1;
+}
+
+.dark-mode th {
+  background-color: #333;
+}
+
+.dark-mode tr:nth-child(even) {
+  background-color: #3a3a3a;
+}
+
+/* Input fields */
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode textarea {
+  background-color: #333;
+  color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+/* Links */
+.dark-mode a {
+  color: #9dc9ff;
+}
+
+.dark-mode a:hover,
+.dark-mode a:focus {
+  color: #bbe2ff;
+}
+
+/* Buttons */
+.dark-mode button {
+  background-color: #2f6ebd;
+  color: #ffffff;
+}
+
+.dark-mode button:hover,
+.dark-mode button:focus {
+  background-color: #1d4f87;
+}
+
+/* Table filter input */
+.dark-mode #project-search {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* Footer */
+.dark-mode footer {
+  background-color: #111;
+  color: #e6e6e6;
+}
+
+/* ====== Accessibility Helpers ====== */
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ====== Responsive Styles ====== */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  header, footer {
+    padding: 15px;
+  }
+}
